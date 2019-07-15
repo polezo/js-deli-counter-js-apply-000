@@ -26,3 +26,21 @@ const currentLine = arr => {
     return "The line is currently empty.";
   }
 }
+
+let mostRecentTicket = 47;
+
+const takeANumber2 = arr => {
+  let customerTicket = mostRecentTicket + 1;
+  arr.push(customerTicket);
+  mostRecentTicket = customerTicket;
+  };
+
+
+let arr = ['Jim','John','Jenny','Jane'];
+console.log(currentLine(arr));
+console.log(takeANumber(arr,'James'));
+
+takeANumber2(arr);
+takeANumber2(arr);
+
+console.log(currentLine(arr));
